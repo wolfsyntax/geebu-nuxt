@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    Dashboard
+    Layout: default
+    <slot />
   </div>
 </template>
 
