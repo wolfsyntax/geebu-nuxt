@@ -2,8 +2,7 @@
 
 <template>
   <div>
-    <event-list />
-    <faq />
+    Component: profile/customer
   </div>
 </template>
 

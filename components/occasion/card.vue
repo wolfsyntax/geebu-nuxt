@@ -2,8 +2,7 @@
 
 <template>
   <div>
-    <event-list />
-    <faq />
+    Component: occasion/card
   </div>
 </template>
 

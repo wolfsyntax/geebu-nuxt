@@ -2,8 +2,7 @@
 
 <template>
   <div>
-    <event-list />
-    <faq />
+    Component: slider
   </div>
 </template>
 

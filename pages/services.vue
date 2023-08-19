@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    Page: foo
+    <reminder />
+    <faq />
   </div>
 </template>
 

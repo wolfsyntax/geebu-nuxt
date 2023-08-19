@@ -2,8 +2,7 @@
 
 <template>
   <div>
-    <event-list />
-    <faq />
+    <event-card />
   </div>
 </template>
 

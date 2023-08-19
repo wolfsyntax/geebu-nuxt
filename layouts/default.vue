@@ -2,8 +2,9 @@
 
 <template>
   <div>
-    Layout: default
+    <page-header />
     <slot />
+    <page-footer />
   </div>
 </template>
 

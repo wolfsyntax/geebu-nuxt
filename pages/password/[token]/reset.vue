@@ -2,8 +2,12 @@
 
 <template>
   <div>
-    Page: foo
+    Password Reset
   </div>
 </template>
-
+<script setup>
+  definePageMeta({
+      layout: 'auth'
+  })
+</script>
 <style scoped></style>

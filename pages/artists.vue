@@ -2,7 +2,9 @@
 
 <template>
   <div>
-    Page: foo
+    <artist-list />
+    <reminder />
+    <faq />
   </div>
 </template>
 

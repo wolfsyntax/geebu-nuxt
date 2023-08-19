@@ -2,8 +2,8 @@
 
 <template>
   <div>
-    <event-list />
-    <faq />
+    Component: artist/list
+    <card />
   </div>
 </template>
 

@@ -2,8 +2,8 @@
 
 <template>
   <div>
-    <event-list />
-    <faq />
+    Occasion List
+    <occasion-card />
   </div>
 </template>
 
