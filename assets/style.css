@@ -26,6 +26,7 @@ body {
   font-family: "Urbanist", sans-serif;
   background-color: var(--white);
 }
+
 .form-check-input:focus {
   border-color: var(--orange);
   outline: 0;
