@@ -31,5 +31,6 @@ export default defineNuxtConfig({
         class: "antialiased"
       }
     }
-  }
+  },
+  css: ['assets/style.css']
 })
