@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    <slider />
+
+    <features />
     <OccasionList/>
     <artist-list/>
     <reminder />

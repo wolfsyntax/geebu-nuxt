@@ -3,7 +3,7 @@
 <template>
   <div>
     Component: artist/list
-    <card />
+    <artist-card />
   </div>
 </template>
 

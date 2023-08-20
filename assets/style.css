@@ -23,8 +23,8 @@
   --btn-focus: #ffe4c5;
 }
 body {
-  font-family: "Urbanist", sans-serif;
-  background-color: var(--white);
+  font-family: "Roboto", sans-serif;
+  /* background-color: var(--white); */
 }
 
 .form-check-input:focus {
@@ -1692,18 +1692,17 @@ header nav {
 }
 
 /* LOGIN / REGISTER PAGE */
-.login .container-fluid,
-.register .container-fluid {
+.auth .container-fluid {
   margin: 0;
   padding: 0;
 }
-.login #loginCarouselBanner,
-.register #registerCarouselBanner {
+
+.auth #authCarouselBanner {
   width: 60%;
   float: left;
 }
-.login #loginCarouselBanner .carousel-indicators [data-bs-target],
-.register #registerCarouselBanner .carousel-indicators [data-bs-target] {
+
+.auth #authCarouselBanner .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
   border: 2px solid var(--white);
@@ -1712,8 +1711,7 @@ header nav {
   opacity: 1;
   margin: auto 8px;
 }
-.login #loginCarouselBanner .carousel-indicators .active,
-.register #registerCarouselBanner .carousel-indicators .active {
+.auth #authCarouselBanner .carousel-indicators .active {
   outline: 4px solid #ffffff00;
   border: 2px solid #ffffff00;
   /* transition: 0.7s all ease-in; */
@@ -1723,42 +1721,40 @@ header nav {
   border-top: solid 1px var(--white);
   border-right: solid 1px var(--white);
 }
-.login #loginCarouselBanner .carousel-item,
-.register #registerCarouselBanner .carousel-item {
+
+.auth #authCarouselBanner .carousel-item {
   height: 100vh;
 }
-.login #loginCarouselBanner .carousel-item:nth-child(1),
-.register #registerCarouselBanner .carousel-item:nth-child(1) {
+
+.auth #authCarouselBanner .carousel-item:nth-child(1) {
   background: url("/assets/login-signup/login-slider-1.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.login #loginCarouselBanner .carousel-item:nth-child(2),
-.register #registerCarouselBanner .carousel-item:nth-child(2) {
+
+.auth #authCarouselBanner .carousel-item:nth-child(2) {
   background: url("/assets/login-signup/login-slider-2.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.login #loginCarouselBanner .carousel-item:nth-child(3),
-.register #registerCarouselBanner .carousel-item:nth-child(3) {
+
+.auth #authCarouselBanner .carousel-item:nth-child(3) {
   background: url("/assets/login-signup/login-slider-3.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.login .login-form,
-.register .register-form {
+
+.auth .auth-form {
   width: 40%;
   float: left;
   padding: 5% 7% 1%;
   overflow: scroll;
   height: 100vh;
 }
-.login .login-form .logo,
-.register .register-form .logo {
+.auth .auth-form .logo {
   margin-bottom: 24px;
 }
-.login .login-form .card,
-.register .register-form .card {
+.auth .auth-form .card {
   border: 0px solid var(--white);
   margin-bottom: 25px;
   box-shadow: none;
@@ -1766,16 +1762,15 @@ header nav {
   -moz-box-shadow: none;
   -ms-box-shadow: none;
 }
-.login .card .card-header,
-.register .card .card-header {
+.auth .card .card-header,
+.auth .card .card-header {
   border-radius: 0px;
   background-color: var(--white);
   border-bottom: 0px var(--white);
   padding: 0;
   margin-bottom: 20px;
 }
-.login .card .card-header h2,
-.register .card .card-header h2 {
+.auth .card .card-header h2 {
   --tile-color: #1d1d1d;
   font-style: normal;
   font-weight: 700;
@@ -1784,8 +1779,7 @@ header nav {
   letter-spacing: -0.02em;
   color: var(--tile-color);
 }
-.login .card .card-header p,
-.register .card .card-header p {
+.auth .card .card-header p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1794,12 +1788,12 @@ header nav {
   color: var(--p-color4);
   margin-bottom: 0rem;
 }
-.login .card .card-body,
-.register .card .card-body {
+
+.auth .card .card-body {
   padding: 0;
 }
-.login form .form-group label,
-.register form .form-group label {
+
+.auth form .form-group label {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1807,31 +1801,30 @@ header nav {
   letter-spacing: -0.02em;
   color: var(--p-color4);
 }
-.login form .form-group .form-control,
-.register form .form-group .form-control {
+
+.auth form .form-group .form-control {
   height: 48px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.login form .form-check,
-.register form .form-check {
+
+.auth form .form-check {
   margin-bottom: 24px;
 }
-.login form .form-checkbox .form-check-input,
-.register form .form-checkbox .form-check-input {
+
+.auth form .form-checkbox .form-check-input {
   width: 20px;
   height: 20px;
   border: 1.5px solid #d1d1d1;
   border-radius: 2px;
   margin-right: 12px;
 }
-.login .form-checkbox .form-check-input:checked,
-.register .form-checkbox .form-check-input:checked {
+.auth .form-checkbox .form-check-input:checked {
   background-color: var(--orange);
   border-color: var(--orange);
 }
-.login form .form-checkbox .form-check-label,
-.register form .form-checkbox .form-check-label {
+
+.auth form .form-checkbox .form-check-label {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1840,14 +1833,16 @@ header nav {
   color: var(--p-color4);
   margin-top: 4.5px;
 }
-.register .row-checkbox .account-type {
+
+.auth .row-checkbox .account-type {
   color: #1d1d1d;
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 700;
   letter-spacing: -0.035rem;
 }
-.register .row-checkbox .account-description {
+
+.auth .row-checkbox .account-description {
   color: #2d3748;
   font-size: 0.875rem;
   font-weight: 400;
@@ -1855,24 +1850,28 @@ header nav {
   letter-spacing: -0.0175rem;
   margin-bottom: 2.5rem;
 }
-.register .row-checkbox .form-check {
+
+.auth .row-checkbox .form-check {
   display: flex;
   align-items: center;
   border-radius: 0.3125rem;
   border: 1px solid #d1d1d1;
   padding: 0.75rem 1rem;
 }
-.register .row-checkbox .form-check:hover {
+
+.auth .row-checkbox .form-check:hover {
   border: 1px solid var(--orange);
 }
-.register .row-checkbox .form-check:hover label {
+
+.auth .row-checkbox .form-check:hover label {
   color: var(--orange);
 }
-.register .row-checkbox .form-check:hover input {
+
+.auth .row-checkbox .form-check:hover input {
   /* background-color: var(--orange); */
   border-color: var(--orange);
 }
-.register .row-checkbox .form-check label {
+.auth .row-checkbox .form-check label {
   color: #2d3748;
   font-size: 1rem;
   font-weight: 500;
@@ -1880,7 +1879,7 @@ header nav {
   letter-spacing: -0.02rem;
   margin-top: 0.1rem;
 }
-.register .row-checkbox .form-check-input {
+.auth .row-checkbox .form-check-input {
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
@@ -1891,27 +1890,30 @@ header nav {
   border-color: #D1D1D1; */
   /* background-image: none; */
 }
-.register .row-checkbox .form-check-input:checked {
+.auth .row-checkbox .form-check-input:checked {
   background-color: var(--orange);
   border-color: var(--orange);
 }
 /* Style the label to be orange when radio is selected */
-.register .row-checkbox .form-check-input:checked + .form-check-label {
+.auth .row-checkbox .form-check-input:checked + .form-check-label {
   color: var(--orange);
 }
-.register
+
+.auth
   .row-checkbox
   .form-check-input:checked
-  + .register
+  + .auth
   .row-checkbox
   .form-check {
   border: 1px solid var(--orange);
 }
-.register .row-checkbox .have-account {
+
+.auth .row-checkbox .have-account {
   text-align: center;
 }
-.register .row-checkbox .have-account p,
-.register .row-checkbox .have-account a {
+
+.auth .row-checkbox .have-account p,
+.auth .row-checkbox .have-account a {
   color: var(--black-color);
   font-size: 0.875rem;
   font-weight: 500;
@@ -1920,14 +1922,17 @@ header nav {
   text-decoration: none;
   display: inline;
 }
-.register .row-checkbox .have-account a {
+
+.auth .row-checkbox .have-account a {
   padding-left: 0.5rem;
   color: var(--orange);
 }
-.register .row-checkbox .have-account a:hover {
+
+.auth .row-checkbox .have-account a:hover {
   text-decoration: underline;
 }
-.register form .form-checkbox .form-check-label a {
+
+.auth form .form-checkbox .form-check-label a {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -1935,9 +1940,9 @@ header nav {
   color: #007aff;
   text-decoration: none;
 }
-.login form button,
-.register form button,
-.register .btn-account-type button {
+
+.auth form button,
+.auth .btn-account-type button {
   color: var(--white);
   font-size: 1rem;
   font-weight: 700;
@@ -1953,35 +1958,39 @@ header nav {
   text-align: center;
   margin: 0 auto 5rem;
 }
-.login form .btn-login button:hover,
-.register form .btn-sign-up button:hover,
-.register form .row-checkbox .btn-account-type button:hover {
+
+.auth form .btn-login button:hover,
+.auth form .btn-sign-up button:hover,
+.auth form .row-checkbox .btn-account-type button:hover {
   color: var(--white);
   background-color: var(--btn-hovered);
   border: 1px solid var(--btn-hovered);
 }
-.login form .btn-login button:hover .forward-icon,
-.register form .btn-sign-up button:hover .forward-icon,
-.register form .row-checkbox .btn-account-type button:hover .forward-icon {
+.auth form .btn-login button:hover .forward-icon,
+.auth form .btn-sign-up button:hover .forward-icon,
+.auth form .row-checkbox .btn-account-type button:hover .forward-icon {
   font-size: 1.4rem;
   margin-left: 2px;
   color: var(--white);
   display: block;
 }
-.login form .btn-login .forward-icon,
-.register form .btn-sign-up .forward-icon,
-.register form .row-checkbox .btn-account-type .forward-icon {
+
+.auth form .btn-login .forward-icon,
+.auth form .btn-sign-up .forward-icon,
+.auth form .row-checkbox .btn-account-type .forward-icon {
   display: none;
 }
-.register .btn-account-type {
+
+.auth .btn-account-type {
   margin: 2.5rem 0 4rem 0;
 }
-.register form .btn-sign-up {
+
+.auth form .btn-sign-up {
   margin-bottom: 3rem;
 }
-.register form .btn.disabled,
-.register form .btn:disabled,
-.register form fieldset:disabled .btn {
+
+.auth form .btn.disabled,
+.auth form fieldset:disabled .btn {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1995,13 +2004,14 @@ header nav {
   padding-bottom: 15px;
   opacity: 0.5;
 }
-.login .select-login,
-.register .select-register {
+
+.auth .select-login,
+.auth .select-register {
   margin-right: 0;
   margin-left: 0;
 }
-.login .continue-with p,
-.register .continue-with p {
+
+.auth .continue-with p {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2014,17 +2024,20 @@ header nav {
   line-height: 0.1em;
   margin: 0 auto;
 }
-.login .select-login p span,
-.register .select-register p span {
+
+.auth .select-login p span,
+.auth .select-register p span {
   background: var(--white);
   padding: 0 10px;
 }
-.login .select-login .continue-with,
-.register .select-register .continue-with {
+
+.auth .select-login .continue-with,
+.auth .select-register .continue-with {
   margin-bottom: 30px;
 }
-.login .select-login .google,
-.register .select-register .google {
+
+.auth .select-login .google,
+.auth .select-register .google {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2038,17 +2051,18 @@ header nav {
   padding-bottom: 13px;
   margin-bottom: 15px;
 }
-.register .select-register .google {
+
+.auth .select-register .google {
   border: 0 !important;
 }
-.login .select-login .google img,
-.login .select-login .facebook img,
-.register .select-register .google img,
-.register .select-register .facebook img {
+
+.auth .select-login .google img,
+.auth .select-login .facebook img {
   margin-right: 11px;
 }
-.login .select-login .facebook,
-.register .select-register .facebook {
+
+.auth .select-login .facebook,
+.auth .select-register .facebook {
   --p-color: #1d1c2b;
   font-style: normal;
   font-weight: 600;
@@ -2064,11 +2078,13 @@ header nav {
   padding-bottom: 13px;
   margin-bottom: 15px;
 }
-.login .select-login .forgot-password {
+
+.auth .select-login .forgot-password {
   margin-top: 55px;
   margin-bottom: 25px;
 }
-.login .select-login .forgot-password a {
+
+.auth .select-login .forgot-password a {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2077,7 +2093,8 @@ header nav {
   color: var(--orange);
   text-decoration: none;
 }
-.login .select-login .no-account p {
+
+.auth .select-login .no-account p {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2085,16 +2102,17 @@ header nav {
   letter-spacing: -0.02em;
   color: var(--black);
 }
-.login .select-login .no-account p a {
+
+.auth .select-login .no-account p a {
   color: var(--orange);
 }
-.login ::-webkit-scrollbar,
-.register ::-webkit-scrollbar {
+
+.auth ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
 }
-.login ::-webkit-scrollbar-thumb:vertical,
-.register ::-webkit-scrollbar-thumb:vertical {
+
+.auth ::-webkit-scrollbar-thumb:vertical {
   height: 30px;
   background-color: var(--orange);
 }
