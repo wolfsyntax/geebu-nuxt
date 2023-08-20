@@ -21,7 +21,23 @@
   --p-color4: #2d3748;
   --btn-hovered: #ed6300;
   --btn-focus: #ffe4c5;
+
+  --color: #000;
+  --color-invert: #fff;
+  --bg: #fff;
+  --bg-invert: #000;
 }
+
+.dark-mode {
+  color: var(--color-invert);
+  background-color: var(--bg-invert);
+}
+
+.light-mode {
+  color: var(--color);
+  background-color: var(--bg);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   /* background-color: var(--white); */

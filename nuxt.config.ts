@@ -45,5 +45,5 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     // '@nuxtjs/tailwindcss'
   ],
-  css: ['/assets/style.css']
+  css: ['@/assets/style.css']
 })

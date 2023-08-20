@@ -5,8 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div>
-
+  <div >
     <features />
     <OccasionList/>
     <artist-list/>
@@ -15,4 +14,9 @@ useHead({
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.dark-mode body {
+  background-color: #091a27;
+  color: #ebf4f1;
+}
+</style>
