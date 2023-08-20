@@ -39,8 +39,8 @@
 <script>
 export default {
   data: () => ({
-    presentationVideo: '~/assets/videos/geebu-presentation.mp4',
-    videoThumbnail: '~/assets/home/presentation-thumbnail-image.webp',
+    presentationVideo: '/assets/videos/geebu-presentation.mp4',
+    videoThumbnail: '/assets/home/presentation-thumbnail-image.webp',
     geebuFeatures: [
       'Create a Song', 'Booked Artist for Special Occasions and Events', 'Post Events', 'Hire Artist for your Events',
       'Post your Original and Cover Songs', 'Listen to Artist songs'

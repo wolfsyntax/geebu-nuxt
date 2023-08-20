@@ -75,9 +75,9 @@ export default {
         user: 'Roger'
       }
     ],
-    presentationVideo: '~/assets/videos/geebu-presentation.mp4',
+    presentationVideo: '/assets/videos/geebu-presentation.mp4',
     isPlaying: false,
-    videoThumbnail: '~/assets/home/presentation-thumbnail-image.webp',
+    videoThumbnail: '/assets/home/presentation-thumbnail-image.webp',
     observer: null,
     activeIndex: 0,
   }),

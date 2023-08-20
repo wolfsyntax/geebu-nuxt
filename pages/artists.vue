@@ -1,4 +1,8 @@
 <script setup>
+
+// definePageMeta({
+//     colorMode: 'dark'
+// })
 useHead({
   title: 'Artists'
 })
