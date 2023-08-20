@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script setup>
+useHead({
+  title: 'Events'
+})
+</script>
 
 <template>
   <div>
@@ -16,7 +20,7 @@
         </div>
       </div>
     </section>
-    
+
     <event-list />
     <faq />
   </div>

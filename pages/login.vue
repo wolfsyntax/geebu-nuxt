@@ -2,9 +2,9 @@
 definePageMeta({
   layout: 'auth'
 })
+
 useHead({
   title: 'Login',
-  titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} - Geebu` : 'Geebu',
 })
 </script>
 

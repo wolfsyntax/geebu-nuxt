@@ -1,8 +1,12 @@
-<script lang="ts" setup></script>
+<script setup>
+useHead({
+  title: 'Artists'
+})
+</script>
 
 <template>
   <div>
-    <artist-list />
+    <artist-card />
     <reminder />
     <faq />
   </div>

@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script setup>
+useHead({
+  titleTemplate: 'Geebu'
+})
+</script>
 
 <template>
   <div>

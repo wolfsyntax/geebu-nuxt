@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script setup>
+useHead({
+  title: 'Services'
+})
+</script>
 
 <template>
   <div>

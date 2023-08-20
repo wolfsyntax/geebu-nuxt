@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script setup>
+useHead({
+  title: 'Create a Song',
+})
+</script>
 
 <template>
   <div>
